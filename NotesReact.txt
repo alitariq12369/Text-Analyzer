@@ -1,0 +1,73 @@
+let: Modern js ka keyword hai 
+var: duplicate kr skty 
+const: change nai hoskta
+
+Numbers 
+objects
+boolean 
+string 	
+
+document.addEventListener()
+
+
+confirm box 
+
+strings metjods
+last with, start with, alice, substring 
+
+array: let a=[]
+reverse 
+DATES methods 
+
+function myfunc(){}
+
+
+for loops 
+
+arr.forEach
+
+strict mode:
+CLEAN CODE 
+
+this  
+
+promsises
+rejected
+
+
+
+
+
+
+npm install saray node modules say aa ajatay hian 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
