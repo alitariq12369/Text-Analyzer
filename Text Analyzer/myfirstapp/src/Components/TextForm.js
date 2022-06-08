@@ -4,6 +4,13 @@ export default function TextForm() {
   const handleUpClick = () => {
     let newText = text.toUpperCase();
     setText(newText);
+setInterval(() => {
+  document.title="Text u tuils is amazing"
+}, 2000);
+setInterval(() => {
+  document.title="abay kr lay install bhaiiiii"
+}, 1500);
+
   };
   const handleLowClick = () => {
     let newText = text.toLowerCase();
