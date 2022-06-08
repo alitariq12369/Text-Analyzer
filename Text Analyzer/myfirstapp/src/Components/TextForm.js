@@ -4,20 +4,19 @@ export default function TextForm() {
   const handleUpClick = () => {
     let newText = text.toUpperCase();
     setText(newText);
-setInterval(() => {
-  document.title="Text u tuils is amazing"
-}, 2000);
-setInterval(() => {
-  document.title="abay kr lay install bhaiiiii"
-}, 1500);
-
+    setInterval(() => {
+      document.title = "Text u tuils is amazing";
+    }, 2000);
+    setInterval(() => {
+      document.title = "abay kr lay install bhaiiiii";
+    }, 1500);
   };
   const handleLowClick = () => {
     let newText = text.toLowerCase();
     setText(newText);
   };
   const handleconcatClick = () => {
-    let newText = text.concat(text+"");
+    let newText = text.concat(text + "");
     setText(newText);
   };
   const handleclearClick = () => {
@@ -64,10 +63,16 @@ setInterval(() => {
         <button className="btn btn-primary my-5 mx-2" onClick={handleLowClick}>
           Convert to Lower case
         </button>
-        <button className="btn btn-primary my-5 mx-2" onClick={handleconcatClick}>
+        <button
+          className="btn btn-primary my-5 mx-2"
+          onClick={handleconcatClick}
+        >
           Concatenate the Words
         </button>
-        <button className="btn btn-primary my-5 mx-2" onClick={handleclearClick}>
+        <button
+          className="btn btn-primary my-5 mx-2"
+          onClick={handleclearClick}
+        >
           Clear Text
         </button>
       </div>

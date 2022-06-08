@@ -1,5 +1,12 @@
 import React from 'react'
 import propTypes from 'prop-types';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Routes,
+} from "react-router-dom";
 export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -11,10 +18,13 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/">Home</a>
+            <Link className="nav-link active" aria-current="page" to="/Navbar.">Home</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">{props.aboutText}</a>
+            <Link className="nav-link" to="/About">{props.aboutText}</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/TextForm">Text Form</Link>
           </li>
          
         </ul>
@@ -33,6 +43,6 @@ Navbar.propTypes={
 }
 
 Navbar.defaultProps={
-     title:'set title',
-    aboutText:'set about text'
+     title:'TITLE',
+    aboutText:'About'
 }
