@@ -1,12 +1,12 @@
 import React from 'react'
 import propTypes from 'prop-types';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Routes,
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link,
+//   Routes,
+// } from "react-router-dom";
 export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,13 +18,13 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/Navbar.">Home</Link>
+            <a className="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/About">{props.aboutText}</Link>
+            <a className="nav-link" href="#">{props.aboutText}</a>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/TextForm">Text Form</Link>
+            <a className="nav-link" href="#">Text Form</a>
           </li>
          
         </ul>
